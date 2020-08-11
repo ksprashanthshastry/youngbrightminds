@@ -1,0 +1,144 @@
+html, body{
+  background-color: #fcfcfc;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-size: 15px;
+  font-family: 'Andika';
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #e6c395;
+  border-radius: 15px;
+  color: #104a75;
+  transition: 0.5s;
+}
+
+li a.active{
+  background-color: #f5971d;
+  border-radius: 15px;
+  color: #104a75;
+}
+
+.image_container{
+  height: 400px;
+  margin: auto;
+  background-color: black;
+  border-radius: 14px;
+}
+
+/*Forms*/
+.main input[type=text],input[type=date],input[type=password],select, option,textarea{
+  width: 80%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+	background-color: #f3f3f3;
+  font-size: 17px;
+}
+
+hr{
+  border: 1.5px solid black;
+  width: 500px;
+  margin-left: 50px;
+}
+form{
+  font-size: 17px;
+  margin-left: 45px;
+}
+
+.main input[type=text]:focus,input[type=date]:focus,input[type=password]:focus,select:focus, textarea:focus{
+  border: 3px solid #555;
+}
+
+form input[type=submit]{
+  width: 200px;
+  padding: 5px 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+	background-color: #4CAF50;
+  font-size: 18px;
+  font-family: 'Andika';
+}
+
+/*main template*/
+.body_container{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 200px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.side_nav{
+  flex: 0.75;
+  border-right: 2px solid black;
+  margin: 10px;
+  margin-right: 10px;
+}
+.main{
+  flex: 2.5;
+  margin: 10px;
+}
+.dummy_nav{
+  flex: 0.75;
+  margin: 10px;
+  margin-left: 5px;
+}
+
+/*Side navigation*/
+.side_nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side_nav li a {
+  width: 200px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  padding-right: 0;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.quiz ol {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}

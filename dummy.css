@@ -1,0 +1,67 @@
+.game_list{
+  position: absolute;
+  height: 900px;
+  width: 80%;
+  right: 30px;
+}
+
+.game_info{
+  position: relative;
+  height: 150px;
+  width: 100%;
+  margin-top: 0;
+  margin: 10px;
+  border: 2px solid #4a4a4a;
+  border-radius: 10px;
+}
+
+.game_list img{
+  position: relative;
+  top: 0;
+  float: right;
+  border-radius: 9px;
+}
+
+.button{
+  background-color: #1d992c;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.game_list a{
+  position: absolute;
+  right: 250px;
+  bottom: 5px;
+}
+
+.game_nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+}
+
+.game_nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  padding-right: 0;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.game_nav li a:hover {
+  background-color: #555;
+  border-radius: 10px;
+  color: white;
+}
+
+.game_nav li a.active{
+    background-color: #00c2fc;
+    border-radius: 10px;
+    color: #104a75;
+}
