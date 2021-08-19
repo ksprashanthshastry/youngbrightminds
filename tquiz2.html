@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trivia</title>
+  <link rel="stylesheet" href="mainStyleSheet.css">
+  <link href='https://fonts.googleapis.com/css?family=Cherry Cream Soda' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Happy Monkey' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Patrick Hand SC' rel='stylesheet'>
+
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="myjavascript.js" charset="utf-8"></script>
+
+  <div class="header" style="background-image: url(banner.jpg);">
+    <div class="logo_box">
+      <a href="homepage.html"><img src="logo.png" alt="young bright minds" width="440" height="120"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a class="active" href="quiz.html">QUIZZES</a></li>
+        <li><a href="videos.html">VIDEOS</a></li>
+        <li><a href="signup.html">SIGN UP</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+
+      </ul>
+    </nav>
+  </div>
+
+  <div class="body_container">
+    <div class="side_nav">
+      <h3 class="heading">Trivia</h3>
+      <ul>
+        <li><a class="text" href="tquiz1.html">Quiz 1</a></li>
+        <li><a class="text active" href="tquiz2.html">Quiz 2</a></li>
+        <li><a class="text" href="#tquiz3.html">Quiz 3</a></li>
+        <li><a class="text" href="#tquiz4.html">Quiz 4</a></li>
+        <li><a class="text" href="#tquiz5.html">Quiz 5</a></li>
+        <li><a class="text back" href="quiz.html" style="border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">Back to categories?</a></li>
+      </ul>
+    </div>
+
+
+    <div class="main">
+      <div class="quiz">
+        <form name="triviaQuiz(2)" class="" action="process.php" method="post">
+          <input type hidden name="id" value="tquiz2"></input>
+          <ol class="text">
+            <li>
+              How many legs does a spider have? <br>
+              <input type="radio" name="question1" value="12">
+              <label for="12">12</label><br>
+              <input type="radio" name="question1" value="8">
+              <label for="8">8</label><br>
+              <input type="radio" name="question1" value="4">
+              <label for="4">4</label><br>
+              <input type="radio" name="question1" value="6">
+              <label for="6">6</label><br>
+            </li>
+            <li>
+              What’s the name of a place you go to see lots of animals? <br>
+              <input type="radio" name="question2" value="Restaurant">
+              <label for="Restaurant">Restaurant</label><br>
+              <input type="radio" name="question2" value="Beach">
+              <label for="Beach">Beach</label><br>
+              <input type="radio" name="question2" value="Zoo">
+              <label for="Zoo">Zoo</label><br>
+              <input type="radio" name="question2" value="Park">
+              <label for="Park">Park</label><br>
+            </li>
+            <li>
+              If you freeze water, what do you get? <br>
+              <input type="radio" name="question3" value="Rock">
+              <label for="Rock">Rock</label><br>
+              <input type="radio" name="question3" value="Salt">
+              <label for="Salt">Salt</label><br>
+              <input type="radio" name="question3" value="Ice">
+              <label for="Ice">Ice</label><br>
+              <input type="radio" name="question3" value="Steam">
+              <label for="Steam">Steam</label><br>
+            </li>
+            <li>
+              In the nursery rhyme, Jack and Jill, what do Jack and Jill go up the hill to fetch?<br>
+              <input type="radio" name="question4" value="A pail of water">
+              <label for="A pail of water">A pail of water</label><br>
+              <input type="radio" name="question4" value="A cake">
+              <label for="A cake">A cake</label><br>
+              <input type="radio" name="question4" value="Amazon">
+              <label for="Amazons">Amazon</label><br>
+              <input type="radio" name="question4" value="Ice cream">
+              <label for="Ice cream">Ice cream</label><br>
+            </li>
+            <li>
+              Where does the President of the United States live while in office?<br>
+              <input type="radio" name="question5" value="State house">
+              <label for="State house">State house</label><br>
+              <input type="radio" name="question5" value="Blue house">
+              <label for="Blue house">Blue house</label><br>
+              <input type="radio" name="question5" value="White house">
+              <label for="White house">White house</label><br>
+              <input type="radio" name="question5" value="Assemble">
+              <label for="Assemble">Assemble</label><br>
+            </li>
+            <li>
+              How many planets are in our solar system?<br>
+              <input type="radio" name="question6" value="15">
+              <label for="15">15</label><br>
+              <input type="radio" name="question6" value="4">
+              <label for="4">4</label><br>
+              <input type="radio" name="question6" value="8">
+              <label for="8">8</label><br>
+              <input type="radio" name="question6" value="34">
+              <label for="34">34</label><br>
+            </li>
+            <li>
+              Which Disney movie is Elsa in?<br>
+              <input type="radio" name="question7" value="Good Dinosaur">
+              <label for="Good Dinosaur">Good Dinosaur</label><br>
+              <input type="radio" name="question7" value="Trolls">
+              <label for="Trolls">Trolls</label><br>
+              <input type="radio" name="question7" value="Angry Birds">
+              <label for="Angry Birds">Angry Birds</label><br>
+              <input type="radio" name="question7" value="Frozen">
+              <label for="Frozen">Frozen</label><br>
+            </li>
+            <li>
+              Who is Mickey Mouse’s girlfriend?<br>
+              <input type="radio" name="question8" value="Mini mouse">
+              <label for="Mini mouse">Mini mouse</label><br>
+              <input type="radio" name="question8" value="Mega mouse">
+              <label for="Mega mouse">Mega mouse</label><br>
+              <input type="radio" name="question8" value="Red mouse">
+              <label for="Red mouse">Red mouse</label><br>
+              <input type="radio" name="question8" value="Sweet mouse">
+              <label for="Sweet mouse">Sweet mouse</label><br>
+            </li>
+            <li>
+              Where does Schoclatea Claus live?<br>
+              <input type="radio" name="question9" value="South pole">
+              <label for="South pole">South pole</label><br>
+              <input type="radio" name="question9" value="North pole">
+              <label for="North pole">North pole</label><br>
+              <input type="radio" name="question9" value="Centre of the Chalk">
+              <label for="Centre of the Chalk">Centre of the Chalk</label><br>
+              <input type="radio" name="question9" value="Moon">
+              <label for="Moon">Moon</label><br>
+            </li>
+            <li>
+              What do caterpillars turn into?<br>
+              <input type="radio" name="question10" value="Lady ird">
+              <label for="Lady ird">Lady ird</label><br>
+              <input type="radio" name="question10" value="Dragon fly">
+              <label for="Dragon fly">Dragon fly</label><br>
+              <input type="radio" name="question10" value="Butterfly">
+              <label for="Butterfly">Butterfly</label><br>
+              <input type="radio" name="question10" value="Snail">
+              <label for="Snail">Snail</label><br>
+            </li>
+            <li>
+              What do you use to write on a blackboard?<br>
+              <input type="radio" name="question11" value="Cream">
+              <label for="Cream">Cream</label><br>
+              <input type="radio" name="question11" value="Chalk">
+              <label for="Chalk">Chalk</label><br>
+              <input type="radio" name="question11" value="Pen">
+              <label for="Pen">Pen</label><br>
+              <input type="radio" name="question11" value="Sand">
+              <label for="Sand">Sand</label><br>
+            </li>
+            <li>
+              On which holiday do you go trick-or-treating?<br>
+              <input type="radio" name="question12" value="Halloween">
+              <label for="Halloween">Halloween</label><br>
+              <input type="radio" name="question12" value="Thanksgiving">
+              <label for="Thanksgiving">Thanksgiving</label><br>
+              <input type="radio" name="question12" value="Christmas">
+              <label for="Christmas">Christmas</label><br>
+              <input type="radio" name="question12" value="Easter">
+              <label for="Easter">Easter</label><br>
+            </li>
+            <li>
+              Where is the Great Pyramid of Giza?<br>
+              <input type="radio" name="question13" value="Amazon">
+              <label for="Amazon">Amazon</label><br>
+              <input type="radio" name="question13" value="India">
+              <label for="India">India</label><br>
+              <input type="radio" name="question13" value="australia">
+              <label for="australia">australia</label><br>
+              <input type="radio" name="question13" value="Egypt">
+              <label for="Egypt">Egypt</label><br>
+            </li>
+            <li>
+              What do bees make?<br>
+              <input type="radio" name="question14" value="Cheese">
+              <label for="Cheese">Cheese</label><br>
+              <input type="radio" name="question14" value="choclate">
+              <label for="choclate">choclate</label><br>
+              <input type="radio" name="question14" value="Honey">
+              <label for="Honey">Honey</label><br>
+              <input type="radio" name="question14" value="Milk">
+              <label for="Milk">Milk</label><br>
+            </li>
+            <li>
+              How many days are in a year?<br>
+              <input type="radio" name="question15" value="500">
+              <label for="500">500</label><br>
+              <input type="radio" name="question15" value="150">
+              <label for="150">150</label><br>
+              <input type="radio" name="question15" value="275">
+              <label for="275">275</label><br>
+              <input type="radio" name="question15" value="365">
+              <label for="365">365</label><br>
+              <input type="submit" name="submit" value="submit">
+            </li>
+          </ol>
+        </form>
+      </div>
+
+    </div>
+    <div class="dummy_nav"></div>
+
+  </div>
+
+</body>
+</html>

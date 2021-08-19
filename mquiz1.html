@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Mathematics</title>
   <link rel="stylesheet" href="mainStyleSheet.css">
-  <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Cherry Cream Soda' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Happy Monkey' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Patrick Hand SC' rel='stylesheet'>
+
 </head>
 <body>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -16,34 +17,210 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="myjavascript.js" charset="utf-8"></script>
 
-  <header>
+  <div class="header" style="background-image: url(banner.jpg);">
+    <div class="logo_box">
+      <a href="homepage.html"><img src="logo.png" alt="young bright minds" width="440" height="120"></a>
+    </div>
     <nav>
       <ul>
-        <li><a href="homepage.html">HOME</a></li>
+        <li><a href="index.html">HOME</a></li>
         <li><a class="active" href="quiz.html">QUIZZES</a></li>
         <li><a href="videos.html">VIDEOS</a></li>
-        <li><a href="login.html">LOG IN</a></li>
         <li><a href="signup.html">SIGN UP</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+
       </ul>
     </nav>
-
-  </header>
+  </div>
 
   <div class="body_container">
     <div class="side_nav">
-      <h3 class="heading">Select 1 and start answering.</h3>
+      <h3 class="heading">Mathematics</h3>
       <ul>
         <li><a class="active text" href="mquiz1.html">Quiz 1</a></li>
         <li><a class="text" href="#mquiz2.html">Quiz 2</a></li>
         <li><a class="text" href="#mquiz3.html">Quiz 3</a></li>
         <li><a class="text" href="#mquiz4.html">Quiz 4</a></li>
         <li><a class="text" href="#mquiz5.html">Quiz 5</a></li>
+        <li><a class="text back" href="quiz.html" style="border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">Back to categories?</a></li>
       </ul>
     </div>
 
 
     <div class="main">
-
+      <div class="quiz">
+        <form name="mathsQuiz(1)" class="" action="process.php" method="post">
+          <input type hidden name="id" value="mq1"></input>
+          <ol class="text">
+            <li>
+              What is the answer for 5 + 4 = ?<br>
+              <input type="radio" name="question1" value="9">
+              <label for="9">9</label><br>
+              <input type="radio" name="question1" value="12">
+              <label for="12">12</label><br>
+              <input type="radio" name="question1" value="15">
+              <label for="15">15</label><br>
+              <input type="radio" name="question1" value="1">
+              <label for="1">1</label><br>
+            </li>
+            <li>
+              What is the answer for 6 + 14 =?<br>
+              <input type="radio" name="question2" value="11">
+              <label for="11">11</label><br>
+              <input type="radio" name="question2" value="5">
+              <label for="5">5</label><br>
+              <input type="radio" name="question2" value="20">
+              <label for="20">20</label><br>
+              <input type="radio" name="question2" value="25">
+              <label for="25">25</label><br>
+            </li>
+            <li>
+              What is the answer for 8 – 5 = ?<br>
+              <input type="radio" name="question3" value="6">
+              <label for="6">6</label><br>
+              <input type="radio" name="question3" value="3">
+              <label for="3">3</label><br>
+              <input type="radio" name="question3" value="10">
+              <label for="10">10</label><br>
+              <input type="radio" name="question3" value="8">
+              <label for="8">8</label><br>
+            </li>
+            <li>
+              What is the answer for 1 x 4 = ?<br>
+              <input type="radio" name="question4" value="9">
+              <label for="9">9</label><br>
+              <input type="radio" name="question4" value="1">
+              <label for="1">1</label><br>
+              <input type="radio" name="question4" value="4">
+              <label for="4">4</label><br>
+              <input type="radio" name="question4" value="6">
+              <label for="6">6</label><br>
+            </li>
+            <li>
+              What is the answer for 4 x 6 = ?<br>
+              <input type="radio" name="question5" value="20">
+              <label for="20">20</label><br>
+              <input type="radio" name="question5" value="13">
+              <label for="13">13</label><br>
+              <input type="radio" name="question5" value="24">
+              <label for="24">24</label><br>
+              <input type="radio" name="question5" value="10">
+              <label for="10">10</label><br>
+            </li>
+            <li>
+              What is the answer for 5 ÷ 1 = ?<br>
+              <input type="radio" name="question6" value="5">
+              <label for="5">5</label><br>
+              <input type="radio" name="question6" value="10">
+              <label for="10">10</label><br>
+              <input type="radio" name="question6" value="1">
+              <label for="1">1</label><br>
+              <input type="radio" name="question6" value="2">
+              <label for="2">2</label><br>
+            </li>
+            <li>
+              What is the answer for 16 ÷ 4 = ?<br>
+              <input type="radio" name="question7" value="32">
+              <label for="32">32</label><br>
+              <input type="radio" name="question7" value="4">
+              <label for="4">4</label><br>
+              <input type="radio" name="question7" value="2">
+              <label for="2">2</label><br>
+              <input type="radio" name="question7" value="1">
+              <label for="1">1</label><br>
+            </li>
+            <li>
+              What is the answer for 10 – 7 = ?<br>
+              <input type="radio" name="question8" value="4">
+              <label for="4">4</label><br>
+              <input type="radio" name="question8" value="8">
+              <label for="8">8</label><br>
+              <input type="radio" name="question8" value="1">
+              <label for="1">1</label><br>
+              <input type="radio" name="question8" value="3">
+              <label for="3">3</label><br>
+            </li>
+            <li>
+              What is the answer for 8 + 4 = ?<br>
+              <input type="radio" name="question9" value="12">
+              <label for="12">12</label><br>
+              <input type="radio" name="question9" value="19">
+              <label for="19">19</label><br>
+              <input type="radio" name="question9" value="5">
+              <label for="5">5</label><br>
+              <input type="radio" name="question9" value="21">
+              <label for="21">21</label><br>
+            </li>
+            <li>
+              What is the answer for 9 ÷ 9 = ?<br>
+              <input type="radio" name="question10" value="81">
+              <label for="81">81</label><br>
+              <input type="radio" name="question10" value="1">
+              <label for="1">1</label><br>
+              <input type="radio" name="question10" value="3">
+              <label for="3">3</label><br>
+              <input type="radio" name="question10" value="6">
+              <label for="6">6</label><br>
+            </li>
+            <li>
+              What is the answer for 5 x 2 = ?<br>
+              <input type="radio" name="question11" value="10">
+              <label for="10">10</label><br>
+              <input type="radio" name="question11" value="5">
+              <label for="5">5</label><br>
+              <input type="radio" name="question11" value="2">
+              <label for="2">2</label><br>
+              <input type="radio" name="question11" value="20">
+              <label for="20">20</label><br>
+            </li>
+            <li>
+              What is the answer for 21 - 13 = ?<br>
+              <input type="radio" name="question12" value="12">
+              <label for="12">12</label><br>
+              <input type="radio" name="question12" value="14">
+              <label for="14">14</label><br>
+              <input type="radio" name="question12" value="20">
+              <label for="20">20</label><br>
+              <input type="radio" name="question12" value="8">
+              <label for="8">8</label><br>
+            </li>
+            <li>
+              What is the answer for 14 x 6 = ?<br>
+              <input type="radio" name="question13" value="10">
+              <label for="10">70</label><br>
+              <input type="radio" name="question13" value="3">
+              <label for="3">83</label><br>
+              <input type="radio" name="question13" value="24">
+              <label for="24">84</label><br>
+              <input type="radio" name="question13" value="30">
+              <label for="30">50</label><br>
+            </li>
+            <li>
+              What is the answer for56 ÷ 7 = ?<br>
+              <input type="radio" name="question14" value="10">
+              <label for="10">10</label><br>
+              <input type="radio" name="question14" value="14">
+              <label for="14">14</label><br>
+              <input type="radio" name="question14" value="8">
+              <label for="8">8</label><br>
+              <input type="radio" name="question14" value="4">
+              <label for="4">4</label><br>
+            </li>
+            <li>
+              What is the answer for 13 + 1 = ?<br>
+              <input type="radio" name="question15" value="14">
+              <label for="14">14</label><br>
+              <input type="radio" name="question15" value="18">
+              <label for="18">18</label><br>
+              <input type="radio" name="question15" value="9">
+              <label for="9">9</label><br>
+              <input type="radio" name="question15" value="10">
+              <label for="10">10</label><br>
+              <input type="submit" name="submit" value="submit">
+            </li>
+          </ol>
+        </form>
+      </div>
     </div>
     <div class="dummy_nav"></div>
 

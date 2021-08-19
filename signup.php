@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sign up</title>
+  <script>alert("Username already taken")</script>
   <link rel="stylesheet" href="mainStyleSheet.css">
   <link href='https://fonts.googleapis.com/css?family=Cherry Cream Soda' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Happy Monkey' rel='stylesheet'>
@@ -37,46 +38,46 @@
     <div class="main">
       <div class="form_container">
         <h3 class="heading"> Sign up</h3>
-        <form id="myDIV" class="signup_login" name="submission" action="hello.php" onsubmit="return validateInfo()" method="post">
+        <form id="myDIV" class="signup_login" name="submission" action="hello.php" onsubmit="return formValidation()" method="post">
           <table class="text" style="text-align:center">
             <tr>
               <td class="table_td_1">*Name:</td>
-              <td class="table_td_2"><input type = "text" id="name" name = "name" placeholder = "Full name" required autofocus></td>
-              <td class="table_td_3" id="name_error" style="color:red;"></td>
+              <td class="table_td_2"><input type = "text" name = "name" placeholder = "Full name" autofocus></td>
+              <td class="table_td_3" id="name" style="color:red;"></td>
             </tr>
             <tr>
               <td class="table_td_1">*Date of Birth:</td>
-              <td class="table_td_2"><input type="date" id="birthDate" name="birthDate" required value="birthDate" ></td>
-              <td class="table_td_3" id="dateError" style="color:red;"></td>
+              <td class="table_td_2"><input type="date" name="birthDate" value="birthDate" ></td>
+              <td class="table_td_3" style="color:red;"></td>
             </tr>
             <tr>
           		<td class="table_td_1">*Father's Name:</td>
-              <td class="table_td_2"><input id="fname" type = "text" name = "fatherName" required placeholder = "Father's name"></td>
-              <td class="table_td_3" id="fatherName_error" style="color:red;"></td>
+              <td class="table_td_2"><input type = "text" name = "fatherName" placeholder = "Father's name"></td>
+              <td class="table_td_3" id="fatherName" style="color:red;"></td>
             </tr>
             <tr>
           		<td class="table_td_1">*Mother's name:</td>
-              <td class="table_td_2"><input type = "text" id="mname" name = "motherName" required placeholder = "Mother's name"></td>
-              <td class="table_td_3" id="motherName_error" style="color:red;"></td>
+              <td class="table_td_2"><input type = "text" name = "motherName" placeholder = "Mother's name"></td>
+              <td class="table_td_3" id="motherName" style="color:red;"></td>
             </tr>
             <tr>
           		<td class="table_td_1">*Username:</td>
-              <td class="table_td_2"><input type = "text" id="userName" name = "username" required placeholder = "Enter a cool username for you"></td>
-              <td class="table_td_3" id="userName_error" style="color:red;"></td>
+              <td class="table_td_2"><input type = "text" name = "username" placeholder = "Enter a cool username for you"></td>
+              <td class="table_td_3" id="username" style="color:red;"></td>
             </tr>
             <tr>
           		<td class="table_td_1">*Password:</td>
-              <td class="table_td_2"><input type = "password" id="password" name = "password" required placeholder = "Password must be 7 to 15 characters including 1 number and 1 special character" ></td>
-              <td class="table_td_3" id="password_error" style="color:red;"></td>
+              <td class="table_td_2"><input type = "password" name = "password" placeholder = "Password must be 7 to 15 characters including 1 number and 1 special character" ></td>
+              <td class="table_td_3" id="password" style="color:red;"></td>
             </tr>
             <tr>
           		<td class="table_td_1">*Re-type password:</td>
-              <td class="table_td_2"><input type = "password" id="rePassword" name = "rePassword" required placeholder = "Retype password" ></td>
-              <td class="table_td_3" id="rePassword_error" style="color:red;"></td>
+              <td class="table_td_2"><input type = "password" name = "rePassword" placeholder = "Retype password" ></td>
+              <td class="table_td_3" id="rePassword" style="color:red;"></td>
             </tr>
             <tr>
               <td>*Security Question: Select and answer one of the following</td>
-              <td><select class="securityQuestion" name="securityQuestion" size="1" required>
+              <td><select class="securityQuestion" name="securityQuestion" size="1">
                 <option value="question_0"></option>
                 <option value="question_1">What is your Nick name?</option>
                 <option value="question_2">What is the name of your best friend?</option>
@@ -87,14 +88,13 @@
             </tr>
             <tr>
               <td class="table_td_1">*Answer:</td>
-              <td class="table_td_2"><textarea required name="message" rows="1" cols="30" ></textarea></td><br><br>
+              <td class="table_td_2"><textarea name="message" rows="1" cols="30" ></textarea></td><br><br>
             <tr>
               <td class="table_td_1" style="text-align:right"><input type="submit" name="submit" value="Sign up"></td>
               <td class="table_td_1" style="text-align:left"><input type="reset" name="reset" value="Clear"></td>
             </tr>
           </table>
           <p class="text" style="text-decoration:none"><a href="login.html">Already a user? Click to log in</a></p>
-
       	</form>
 
       </div>

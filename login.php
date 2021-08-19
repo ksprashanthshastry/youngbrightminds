@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Login</title>
+  <script>alert("Please login with correct credentials")</script>
   <link rel="stylesheet" href="mainStyleSheet.css">
   <link href='https://fonts.googleapis.com/css?family=Cherry Cream Soda' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Happy Monkey' rel='stylesheet'>
@@ -41,22 +42,23 @@
           <table class="text" style="text-align:center">
             <tr>
               <td class="table_td_1">*Username:</td>
-              <td class="table_td_2"><input type="text" id="userNameLg" name="username" placeholder="Username"></td>
-              <td class="table_td_3" id="userNameLg_error" style="color:red;font-size:15"></td>
+              <td class="table_td_2"><input type="text" name="username" placeholder="Username"></td>
+              <td class="table_td_3" id="userName_error" style="color:red;font-size:15"></td>
             </tr>
 
             <tr>
               <td class="table_td_1" style="text-align:right">*Password:</td>
-              <td class="table_td_2"><input type="password" id="passwordLg" name="password" placeholder="Password"></td>
-              <td class="table_td_3" id="passwordLg_error" style="color:red;"></td>
+              <td class="table_td_2"><input type="password" name="password" placeholder="Password"></td>
+              <td class="table_td_3" id="password_error" style="color:red;"></td>
             </tr>
             <tr>
               <td class="table_td_1" style="text-align:right"><input type = "submit" name = "submit" value = "Log in"></td>
               <td class="table_td_1" style="text-align:left"><input type="reset" name="reset" value="Clear"></td>
             </tr>
           </table>
-          <p class="text" style="text-decoration:none"><a href="forgot_password.html">Forgot password</a></p>
-          <p class="text" style="text-decoration:none"><a href="signup.html">Not a user yet? Click to register</a></p>
+        <p class="text" style="text-decoration:none"><a href="forgot_password.html">Forgot password</a></p>
+        <p class="text" style="text-decoration:none"><a href="signup.html">Not a user yet? Click to register</a></p>
+
       </div>
     </div>
     <div class="dummy_nav"></div>
